@@ -17,6 +17,7 @@ class ListItem: UITableViewCell {
         didSet{
             title.text = movie?.titleLong
             listImage.sd_setImage(with: URL(string: movie?.mediumCoverImage))
+            self.selectionStyle = .none
         }
     }
     
