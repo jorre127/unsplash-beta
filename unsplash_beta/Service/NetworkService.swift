@@ -8,18 +8,17 @@
 import Cara
 
 public protocol NetworkService {
-    func fetchRandom(result: @escaping ((Result<String?, Error>) -> Void))
+    func searchMovies(title: String, result: @escaping ((Result<[Movie]?, Error>) -> Void))
 }
 
 public class WebService: NetworkService {
-    
-    public func fetchRandom(result: @escaping ((Result<String?, Error>) -> Void)) {
-        let request = RandomPhotoRequest()
-        let serializer = CodableSerializer<Photo>()
+    public func searchMovies(title: String, result: @escaping ((Result<[Movie]?, Error>) -> Void)) {
+        let request = searchRequest(title: title)
+        let serializer = CodableSerializer<ApiResponse>()
         service.execute(request, with: serializer) { response in
             switch response {
-            case .success(let photo):
-                result(.success(photo?.id))
+            case .success(let response):
+                result(.success(response?.data.movies))
             case .failure(let error):
                 print(error)
             }
