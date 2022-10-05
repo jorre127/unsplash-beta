@@ -17,8 +17,6 @@ class ListItem: UITableViewCell {
         didSet{
             title.text = movie?.titleLong
             listImage.sd_setImage(with: URL(string: movie?.mediumCoverImage))
-            listImage.layer.cornerRadius = self.frame.height/10
-            listImage.layer.masksToBounds = true
         }
     }
     
