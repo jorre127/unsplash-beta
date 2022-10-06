@@ -51,11 +51,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaK-9B-V5e" customClass="CircularProgressView" customModule="unsplash_beta" customModuleProvider="target">
-                                <rect key="frame" x="155" y="120" width="32" height="32"/>
+                                <rect key="frame" x="187" y="152" width="32" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RatingValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa8-cD-p8c">
-                                        <rect key="frame" x="-24.666666666666657" y="7" width="81.333333333333329" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <rect key="frame" x="-34" y="5.3333333333333446" width="100.33333333333333" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -76,10 +76,10 @@
                             <constraint firstItem="J3Y-ah-xJc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="2Vy-m1-AVn"/>
                             <constraint firstItem="iKl-hd-iD3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2hh-S9-DJO"/>
                             <constraint firstItem="BmD-86-Xyp" firstAttribute="leading" secondItem="aUB-4C-owX" secondAttribute="trailing" constant="8" id="3uk-KO-v64"/>
-                            <constraint firstItem="kaK-9B-V5e" firstAttribute="top" secondItem="aUB-4C-owX" secondAttribute="bottom" constant="16" id="4LK-uu-2gT"/>
+                            <constraint firstItem="kaK-9B-V5e" firstAttribute="top" secondItem="aUB-4C-owX" secondAttribute="bottom" constant="48" id="4LK-uu-2gT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iKl-hd-iD3" secondAttribute="trailing" constant="251" id="7rw-kU-G8f"/>
                             <constraint firstItem="AqE-dh-ih8" firstAttribute="leading" secondItem="6FF-Tt-ndR" secondAttribute="trailing" constant="8" id="9zq-Xv-8OU"/>
-                            <constraint firstItem="kaK-9B-V5e" firstAttribute="leading" secondItem="iKl-hd-iD3" secondAttribute="trailing" constant="16" id="ZXy-u2-b4U"/>
+                            <constraint firstItem="kaK-9B-V5e" firstAttribute="leading" secondItem="iKl-hd-iD3" secondAttribute="trailing" constant="48" id="ZXy-u2-b4U"/>
                             <constraint firstItem="aUB-4C-owX" firstAttribute="leading" secondItem="iKl-hd-iD3" secondAttribute="trailing" constant="16" id="cuf-UU-yLR"/>
                             <constraint firstItem="6FF-Tt-ndR" firstAttribute="leading" secondItem="iKl-hd-iD3" secondAttribute="trailing" constant="16" id="g15-rz-cqx"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J3Y-ah-xJc" secondAttribute="trailing" constant="22" id="hMC-Ul-ps0"/>

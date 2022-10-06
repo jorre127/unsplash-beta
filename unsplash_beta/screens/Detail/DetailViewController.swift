@@ -14,7 +14,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var releaseYearLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
-    @IBOutlet weak var CircularProgressContainer: CircularProgressView!
+    @IBOutlet weak var CircularProgressContainer: CircularProgressView! {
+        didSet{
+            CircularProgressContainer.radius = 30
+            CircularProgressContainer.lineWidth = 10
+            CircularProgressContainer.progressForegroundColor = getRatingColor(rating: detailViewModel.movie?.rating ?? 0)
+            CircularProgressContainer.createCircularPath()
+        }
+    }
     
     var detailViewModel = DetailViewModel()
     
@@ -26,8 +33,6 @@ class DetailViewController: UIViewController {
         self.releaseYearLabel.text = String(movie.year)
         self.durationLabel.text = String(movie.runtime)
         self.ratingLabel.text = String(movie.rating)
-        CircularProgressContainer.progressForegroundColor = getRatingColor(rating: movie.rating)
-        CircularProgressContainer.createCircularPath()
         CircularProgressContainer.progressAnimation(duration: 0.5, value: movie.rating)
     }
     
