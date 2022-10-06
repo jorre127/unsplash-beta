@@ -24,6 +24,7 @@
 		B7A8ABFA28EDBABB00A664B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8ABF928EDBABB00A664B7 /* DetailViewController.swift */; };
 		B7A8ABFE28EDC23400A664B7 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8ABFD28EDC23400A664B7 /* DetailViewModel.swift */; };
 		B7A8AC0228EDC6CF00A664B7 /* screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8AC0128EDC6CF00A664B7 /* screens.swift */; };
+		B7B6535028EF085200E21228 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6534F28EF085200E21228 /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B7A8ABF928EDBABB00A664B7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B7A8ABFD28EDC23400A664B7 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		B7A8AC0128EDC6CF00A664B7 /* screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screens.swift; sourceTree = "<group>"; };
+		B7B6534F28EF085200E21228 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +110,8 @@
 		84A05AE628E5B6A70015BC2F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				B7A8ABF128ED9CD000A664B7 /* ListItem.swift */,
-				B7A8ABF228ED9CD000A664B7 /* ListItem.xib */,
+				B7B6534E28EF083900E21228 /* Progress */,
+				B7B6534D28EF082900E21228 /* ListItem */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -207,6 +209,23 @@
 				B7A8AC0128EDC6CF00A664B7 /* screens.swift */,
 			);
 			path = enums;
+			sourceTree = "<group>";
+		};
+		B7B6534D28EF082900E21228 /* ListItem */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8ABF128ED9CD000A664B7 /* ListItem.swift */,
+				B7A8ABF228ED9CD000A664B7 /* ListItem.xib */,
+			);
+			path = ListItem;
+			sourceTree = "<group>";
+		};
+		B7B6534E28EF083900E21228 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				B7B6534F28EF085200E21228 /* CircularProgressView.swift */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +355,7 @@
 				B7A8ABF328ED9CD000A664B7 /* ListItem.swift in Sources */,
 				B7A8ABE428ED742B00A664B7 /* SearchViewController.swift in Sources */,
 				84A05AED28E5C2110015BC2F /* NetworkService.swift in Sources */,
+				B7B6535028EF085200E21228 /* CircularProgressView.swift in Sources */,
 				84A05AF728E5CF590015BC2F /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
